@@ -1,0 +1,91 @@
+.we__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.we__text-container {
+  padding-top: 35px;
+  padding-bottom: 32px;
+  padding-left: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    padding-bottom: 60px;
+    padding-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 244px;
+    padding-bottom: 253px;
+    padding-left: 155px;
+  }
+
+  &::before {
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: block;
+      content: "";
+      background-image: url("../../img/we/arrow-upper-2.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 959px;
+      height: 279px;
+      top: 40px;
+      right: 400px;
+    }
+  }
+
+  &::after {
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: block;
+      content: "";
+      background-image: url("../../img/we/arrow-lower.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 649px;
+      height: 289px;
+      top: 400px;
+      left: 10px;
+    }
+  }
+}
+
+.we__title {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
+
+  &::before {
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: block;
+      content: "";
+      background-image: url("../../img/we/arrow-upper-1.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 127px;
+      height: 214px;
+      left: -5px;
+      top: 200px;
+    }
+  }
+}
+
+.we__img {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-top: 130px;
+  }
+}

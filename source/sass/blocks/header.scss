@@ -1,0 +1,157 @@
+.header {
+  position: relative;
+}
+
+.header__nav {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 55px;
+  background-color: $darkblue;
+
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 60px;
+    min-height: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 95px;
+    padding-right: 62px;
+    padding-top: 20px;
+    min-height: 97px;
+    background-color: unset;
+  }
+}
+
+.nav__logo {
+  width: 45px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 90px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nav__list {
+  display: none;
+
+  &_active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 189px;
+    height: 215px;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    background-color: $white;
+    order: 1;
+    position: absolute;
+    top: 55px;
+    right: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 267px;
+      height: 305px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      top: 100px;
+      right: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 60px;
+  }
+}
+
+.nav__link {
+  color: #A3A3A3;
+
+    &:hover {
+      color: #056BB2;
+    }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.nav__menu {
+  width: 20px;
+  height: auto;
+
+  &_disable {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nav__menu_hover {
+  display: none;
+
+  &_active {
+    display: block;
+    width: 20px;
+    height: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: auto;
+    }
+  }
+}
+
+.nav__button {
+  font-size: 14px;
+  font-weight: 600;
+  color: $white;
+  background-color: transparent;
+  text-transform: uppercase;
+  width: 156px;
+  height: 37px;
+  border: 2px solid $white;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: #fe8102;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    width: 280px;
+    height: 62px;
+    border: 3px solid $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+    width: 332px;
+    height: 94px;
+    margin-left: 94px;
+  }
+}

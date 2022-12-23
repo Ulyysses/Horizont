@@ -1,0 +1,54 @@
+.footer__organizer {
+  color: $white;
+}
+
+.footer__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 65px;
+  background-color: $blue;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 115px;
+  }
+}
+
+.footer__list {
+  display: flex;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 40px;
+  }
+}
+
+.footer__icon {
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 58px;
+    height: 60px;
+  }
+}

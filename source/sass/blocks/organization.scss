@@ -1,0 +1,290 @@
+.organization {
+  position: relative;
+  top: -60px;
+
+  @media (min-width: $tablet-width) {
+    top: -120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
+.organization__container {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 270px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 860px;
+  }
+
+  position: relative;
+}
+
+.organization__title {
+  margin-bottom: 10px;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+    margin-left: none;
+  }
+}
+
+.item__title {
+  text-transform: none;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.organization__list {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    gap: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 219px;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 95px;
+    column-gap: 145px;
+    flex-wrap: wrap;
+  }
+}
+
+.organization__item {
+  z-index: 2;
+
+  &:nth-child(1) {
+    &::before {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        content: "";
+        background-image: url("../../img/work-organization/1.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        width: 124px;
+        height: 233px;
+        top: -40px;
+        left: -80px;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      background-image: url("../../img/work-organization/arrow-1-mob.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 122px;
+      height: 176px;
+      top: -10px;
+      left: 200px;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        content: "";
+        background-image: url("../../img/work-organization/arrow-1.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        width: 230px;
+        height: 364px;
+        top: -60px;
+        left: 420px;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    padding-left: 46px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 127px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+
+    &::before {
+      display: none;
+      @media (min-width: $desktop-width) {
+        display: block;
+        content: "";
+        background-image: url("../../img/work-organization/2.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        width: 124px;
+        height: 233px;
+        top: -10px;
+        right: 535px;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      background-image: url("../../img/work-organization/arrow-2-mob.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 122px;
+      height: 176px;
+      top: 120px;
+      left: -25px;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        content: "";
+        background-image: url("../../img/work-organization/arrow-2.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        width: 166px;
+        height: 236px;
+        top: 250px;
+        left: -40px;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+
+  &::before {
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: block;
+      content: "";
+      background-image: url("../../img/work-organization/3.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 124px;
+      height: 233px;
+      top: 260px;
+      left: -100px;
+    }
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: url("../../img/work-organization/arrow-3-mob.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    width: 122px;
+    height: 176px;
+    top: 240px;
+    left: 220px;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      content: "";
+      background-image: url("../../img/work-organization/arrow-3.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 257px;
+      height: 294px;
+      top: 450px;
+      left: 420px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+}
+
+  &:nth-child(4) {
+    padding-left: 115px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 127px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+
+    &::before {
+      display: none;
+      @media (min-width: $desktop-width) {
+        display: block;
+        content: "";
+        background-image: url("../../img/work-organization/4.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        width: 124px;
+        height: 233px;
+        top: 260px;
+        right: 535px;
+      }
+    }
+  }
+}
+
+.organization__img {
+  position: absolute;
+  width: 368px;
+  height: auto;
+  margin-top: -30px;
+  transform: scale(-1, 1);
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: auto;
+    margin-top: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -100px;
+    margin-left: -715px;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+}

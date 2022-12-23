@@ -1,0 +1,113 @@
+.goal {
+  position: relative;
+  top: -5px;
+}
+
+.goal__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $white;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $black;
+    margin-bottom: 113px;
+    flex-direction: row;
+    justify-content: unset;
+  }
+}
+
+.goal__img {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-top: 91px;
+    height: 100%;
+    width: 520px;
+  }
+}
+
+.goal__text-container {
+  padding-left: 19px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 37px;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 243px;
+    padding-left: 250px;
+    padding-bottom: none;
+  }
+
+  &::before {
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: block;
+      content: "";
+      background-image: url("../../img/goal/pattern-upper.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 666px;
+      height: 296px;
+      bottom: 380px;
+      right: 120px;
+    }
+  }
+
+  &::after {
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: block;
+      content: "";
+      background-image: url("../../img/goal/pattern-lower.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 666px;
+      height: 296px;
+      top: 325px;
+      right: 120px;
+    }
+  }
+}
+
+.goal__title {
+  color: $black;
+  margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.goal__text {
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.goal__img_small {
+  width: 375px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
