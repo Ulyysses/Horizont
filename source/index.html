@@ -243,23 +243,24 @@
       </div>
 
 
-      <div class="communication__form">
-        <div class="form__container">
-          <form class="form" action="#" method="get">
-            <fieldset class="form__item">
-              <input type="text" placeholder="ФИО" class="form__input" required>
-            </fieldset>
-            <fieldset class="form__item">
-              <input type="tel" placeholder="Телефон" pattern="8|+7[0-9]{10}" class="form__input" required>
-            </fieldset>
-            <fieldset class="form__item">
-              <input type="email" placeholder="E-mail" class="form__input" required>
-            </fieldset>
-            <button type="button" class="form__button">
-              Оставить заявку
-            </button>
-          </form>
-        </div>
+      <div class="communication__form form__container">
+        <form class="form" action="#" method="get">
+          <fieldset class="form__item">
+            <label for="name" class="form__label visually-hidden">ФИО</label>
+            <input name="name" type="text" placeholder="ФИО" class="form__input" required>
+          </fieldset>
+          <fieldset class="form__item">
+            <label for="phone" class="form__label visually-hidden">Телефон</label>
+            <input name="phone" type="tel" placeholder="Телефон" class="form__input" required>
+          </fieldset>
+          <fieldset class="form__item">
+            <label for="mail" class="form__label visually-hidden">E-mail</label>
+            <input name="mail" type="email" placeholder="E-mail" class="form__input" required>
+          </fieldset>
+          <button type="submit" class="form__button">
+            Оставить заявку
+          </button>
+        </form>
       </div>
 
     </section>
