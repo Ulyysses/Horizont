@@ -59,6 +59,10 @@
   margin-bottom: 10px;
   font-weight: 700;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 35px;
     margin-bottom: 21px;
