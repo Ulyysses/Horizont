@@ -164,21 +164,6 @@
 }
 
 .form__button {
-  text-align: center;
-  margin-top: 25px;
-  margin-left: 70px;
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 80px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 70px;
-  }
-}
-
-.form__button {
   font-size: 14px;
   font-weight: 600;
   color: $white;
@@ -195,17 +180,18 @@
   margin-top: 10px;
   margin-left: 35px;
 
+  text-align: center;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     width: 280px;
     height: 62px;
     border: 3px solid $white;
-
-    margin-left: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin-right: 70px;
     font-size: 28px;
     width: 332px;
     height: 94px;

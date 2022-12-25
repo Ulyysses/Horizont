@@ -23,6 +23,7 @@
 
   &::before {
     display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
       content: "";
@@ -39,6 +40,7 @@
 
   &::after {
     display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
       content: "";
@@ -67,6 +69,7 @@
 
   &::before {
     display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
       content: "";
@@ -84,6 +87,7 @@
 
 .we__img {
   display: none;
+
   @media (min-width: $desktop-width) {
     display: block;
     margin-top: 130px;

@@ -8,6 +8,7 @@
 
   &::before {
     display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
       content: "";
@@ -45,6 +46,7 @@
 
   &::after {
     display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
       content: "";

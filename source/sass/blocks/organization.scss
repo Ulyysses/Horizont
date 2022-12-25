@@ -143,6 +143,7 @@
 
     &::before {
       display: none;
+
       @media (min-width: $desktop-width) {
         display: block;
         content: "";
@@ -189,54 +190,53 @@
   }
 
   &:nth-child(3) {
-
-  &::before {
-    display: none;
-    @media (min-width: $desktop-width) {
-      display: block;
-      content: "";
-      background-image: url("../../img/work-organization/3.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      width: 124px;
-      height: 233px;
-      top: 260px;
-      left: -100px;
-    }
-  }
-
-  &::after {
-    display: block;
-    content: "";
-    background-image: url("../../img/work-organization/arrow-3-mob.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    position: absolute;
-    width: 122px;
-    height: 176px;
-    top: 240px;
-    left: 220px;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-      content: "";
-      background-image: url("../../img/work-organization/arrow-3.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      width: 257px;
-      height: 294px;
-      top: 450px;
-      left: 420px;
-    }
-
-    @media (min-width: $desktop-width) {
+    &::before {
       display: none;
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        content: "";
+        background-image: url("../../img/work-organization/3.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        width: 124px;
+        height: 233px;
+        top: 260px;
+        left: -100px;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      background-image: url("../../img/work-organization/arrow-3-mob.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 122px;
+      height: 176px;
+      top: 240px;
+      left: 220px;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        content: "";
+        background-image: url("../../img/work-organization/arrow-3.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        width: 257px;
+        height: 294px;
+        top: 450px;
+        left: 420px;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
     }
   }
-
-}
 
   &:nth-child(4) {
     padding-left: 115px;
@@ -250,7 +250,9 @@
     }
 
     &::before {
+
       display: none;
+
       @media (min-width: $desktop-width) {
         display: block;
         content: "";
