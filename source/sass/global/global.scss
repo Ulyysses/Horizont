@@ -71,10 +71,6 @@ button {
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
-    width: 760px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 1440px;
   }

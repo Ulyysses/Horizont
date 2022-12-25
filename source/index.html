@@ -23,10 +23,10 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body class="page__body container">
+<body class="page__body">
 
   <header class="header">
-    <nav class="header__nav">
+    <nav class="header__nav container">
       <img class="nav__logo" src="./img/mountains/beams.svg" alt="логотип Горизонта">
       <ul class="nav__list">
         <li class="nav__item"><a href="#we" class="nav__link">О нас</a></li>
@@ -41,10 +41,10 @@
     </nav>
   </header>
 
-  <main class="page container">
+  <main class="page">
 
     <section class="main">
-      <div class="main__container">
+      <div class="main__container container">
         <img class="main__logo" src="./img/mountains/beams.svg" alt="логотип Горизонта">
         <h1 class="main__title">Горизонт</h1>
         <h2 class="main__subtitle">Благотворительный образовательный проект</h2>
@@ -58,7 +58,7 @@
     </section>
 
     <section class="we" id="we">
-      <div class="we__container">
+      <div class="we__container container">
         <div class="we__text-container">
           <h3 class="we__title">Кто мы</h3>
           <p class="we__text">Горизонт - это некоммерческий проект,
@@ -78,7 +78,7 @@
     </section>
 
     <section class="goal">
-      <div class="goal__container">
+      <div class="goal__container container">
         <picture>
           <source srcset="./img/goal2.webp" type="image/webp">
           <img class="goal__img" src="./img/goal2.jpg" alt="абстрактное фото ребенка">
@@ -100,7 +100,7 @@
     </section>
 
     <section class="career">
-      <div class="career__container">
+      <div class="career__container container">
         <h3 class="career__title">Cовременные информационные технологии <br>
           - это огромный набор
           профессий и направлений
@@ -122,7 +122,7 @@
     </section>
 
     <section class="work-format">
-      <div class="work-format__container">
+      <div class="work-format__container container">
         <div class="work-format__text-container">
           <h3 class="work-format__title">Формат работы
           </h3>
@@ -160,7 +160,7 @@
     </section>
 
     <section class="organization">
-      <div class="organization__container">
+      <div class="organization__container container">
         <h3 class="organization__title">Организация работы
         </h3>
         <ol class="organization__list">
@@ -208,7 +208,7 @@
     </section>
 
     <section class="leisure">
-      <div class="leisure__container">
+      <div class="leisure__container container">
         <picture>
           <source srcset="./img/leisure.webp" type="image/webp">
           <img class="leisure__img" src="./img/leisure.jpg" alt="абстрактное фото ребенка" width="732" height="797">
@@ -233,34 +233,36 @@
     </section>
 
     <section class="communication" id="communication">
-      <div class="communication__container">
-        <h3 class="communication__title">Как с нами связаться
-        </h3>
-        <p class="communication__text">Если вы хотите, чтобы Горизонт приехал к вам, <br>
-          то свяжитесь с нами по почте:</p>
-        <a class="communication__link" href="mailto:hello@gorizontclass.ru">hello@gorizontclass.ru</a>
-        <p class="communication__text">Или оставьте заявку</p>
-      </div>
+      <div class="communication__container container">
+        <div class="communication__description">
+          <h3 class="communication__title">Как с нами связаться
+          </h3>
+          <p class="communication__text">Если вы хотите, чтобы Горизонт приехал к вам, <br>
+            то свяжитесь с нами по почте:</p>
+          <a class="communication__link" href="mailto:hello@gorizontclass.ru">hello@gorizontclass.ru</a>
+          <p class="communication__text">Или оставьте заявку</p>
+        </div>
 
 
-      <div class="communication__form form__container">
-        <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeVaUL8dn9yand8NLERxsLznlxL7Ox7-hXliSAO1VSnKn2d_g/formResponse" method="get">
-          <fieldset class="form__item">
-            <label for="entry.378483045" class="form__label visually-hidden">ФИО</label>
-            <input name="entry.378483045" type="text" placeholder="ФИО" class="form__input" required>
-          </fieldset>
-          <fieldset class="form__item">
-            <label for="entry.1349661566" class="form__label visually-hidden">Телефон</label>
-            <input name="entry.1349661566" type="tel" placeholder="Телефон" class="form__input" required>
-          </fieldset>
-          <fieldset class="form__item">
-            <label for="emailAddress" class="form__label visually-hidden">E-mail</label>
-            <input name="emailAddress" type="email" placeholder="E-mail" class="form__input" required>
-          </fieldset>
-          <button type="submit" class="form__button">
-            Оставить заявку
-          </button>
-        </form>
+        <div class="communication__form form__container">
+          <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeVaUL8dn9yand8NLERxsLznlxL7Ox7-hXliSAO1VSnKn2d_g/formResponse" method="get">
+            <fieldset class="form__item">
+              <label for="entry.378483045" class="form__label visually-hidden">ФИО</label>
+              <input name="entry.378483045" type="text" placeholder="ФИО" class="form__input" required>
+            </fieldset>
+            <fieldset class="form__item">
+              <label for="entry.1349661566" class="form__label visually-hidden">Телефон</label>
+              <input name="entry.1349661566" type="tel" placeholder="Телефон" class="form__input" required>
+            </fieldset>
+            <fieldset class="form__item">
+              <label for="emailAddress" class="form__label visually-hidden">E-mail</label>
+              <input name="emailAddress" type="email" placeholder="E-mail" class="form__input" required>
+            </fieldset>
+            <button type="submit" class="form__button">
+              Оставить заявку
+            </button>
+          </form>
+        </div>
       </div>
 
     </section>
@@ -268,7 +270,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer__container container">
       <a class="footer__organizer" href="#">Организаторы</a>
       <ul class="footer__list">
         <li class="footer__item">

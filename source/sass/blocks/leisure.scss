@@ -4,19 +4,20 @@
 
 .leisure__container {
   display: flex;
-  margin-left: 18px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-left: 18px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-left: 44px;
-    margin-bottom: 63px;
+    padding-bottom: 63px;
+    padding-left: 44px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: center;
     gap: 33px;
-    margin-bottom: none;
+    padding-left: 0;
+    padding-bottom: none;
   }
 }
 
