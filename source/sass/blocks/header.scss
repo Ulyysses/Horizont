@@ -139,7 +139,7 @@
   margin: 0 auto;
 
   &:hover {
-    background-color: #fe8102;
+    background-color: $orange;
   }
 
   @media (min-width: $tablet-width) {

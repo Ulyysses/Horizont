@@ -38,6 +38,21 @@
   }
 }
 
+.footer__link {
+  display: block;
+  line-height: 0;
+
+  svg path {
+    transition: all 0.5s ease;
+  }
+
+  &:hover {
+    svg path {
+      fill: $orange;
+    }
+  }
+}
+
 .footer__icon {
   width: 30px;
   height: 30px;
