@@ -141,6 +141,13 @@
   padding: 20px 15px;
   width: 220px;
   height: 30px;
+  color: $white;
+  font-size: 25px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $blue;
+  }
 
   @media (min-width: $tablet-width) {
     width: 330px;
@@ -181,6 +188,12 @@
 
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $blue;
+    border-color: $blue;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
