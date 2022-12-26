@@ -64,12 +64,19 @@
 
 .career__text {
   margin-bottom: 11px;
+  width: 269px;
+  display: block;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+    width: 604px;
+
     margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 899px;
     margin-bottom: 69px;
   }
 }

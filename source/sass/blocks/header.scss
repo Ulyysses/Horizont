@@ -3,24 +3,25 @@
 }
 
 .header__nav {
-  padding-left: 20px;
+  padding-left: 17px;
   padding-right: 20px;
   min-height: 55px;
   background-color: $darkblue;
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    padding-right: 60px;
+    padding-left: 46px;
+    padding-right: 42px;
     min-height: 97px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 95px;
     padding-right: 62px;
-    padding-top: 20px;
+    padding-top: 33px;
     min-height: 97px;
     background-color: unset;
   }
@@ -50,7 +51,7 @@
     width: 189px;
     height: 215px;
     padding-top: 25px;
-    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 25px;
     background-color: $white;
     order: 1;
@@ -138,8 +139,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   transition: all 0.5s ease;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 
   &:hover {
     background-color: $orange;
@@ -156,6 +159,8 @@
     font-size: 28px;
     width: 332px;
     height: 94px;
-    margin-left: 94px;
+    position: unset;
+    left: unset;
+    transform: unset;
   }
 }
