@@ -26,7 +26,7 @@
     min-height: 133px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     padding-left: 50px;
     padding-right: 50px;
     min-height: 115px;
@@ -41,7 +41,7 @@
     gap: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     gap: 40px;
   }
 }
@@ -70,7 +70,7 @@
     height: 62px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     width: 58px;
     height: 60px;
   }

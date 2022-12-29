@@ -15,7 +15,7 @@
     padding-left: 37px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     padding-top: 244px;
     padding-bottom: 253px;
     padding-left: 155px;
@@ -24,7 +24,7 @@
   &::before {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $laptop-width) {
       display: block;
       content: "";
       background-image: url("../../img/we/arrow-upper-2.png");
@@ -41,7 +41,7 @@
   &::after {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $laptop-width) {
       display: block;
       content: "";
       background-image: url("../../img/we/arrow-lower.png");
@@ -63,14 +63,14 @@
     margin-bottom: 19px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     margin-bottom: 14px;
   }
 
   &::before {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $laptop-width) {
       display: block;
       content: "";
       background-image: url("../../img/we/arrow-upper-1.png");
@@ -88,7 +88,7 @@
 .we__img {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: block;
     margin-top: 130px;
   }

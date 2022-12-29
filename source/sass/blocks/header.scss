@@ -1,5 +1,7 @@
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 .header__nav {
@@ -18,7 +20,7 @@
     min-height: 97px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     padding-left: 95px;
     padding-right: 62px;
     padding-top: 33px;
@@ -36,7 +38,7 @@
     height: auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: none;
   }
 }
@@ -69,7 +71,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: flex;
     gap: 60px;
   }
@@ -84,7 +86,7 @@
     text-decoration: underline;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     color: $white;
 
     &:hover {
@@ -106,7 +108,7 @@
     height: auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: none;
   }
 }
@@ -155,7 +157,7 @@
     border: 3px solid $white;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     font-size: 28px;
     width: 332px;
     height: 94px;

@@ -6,22 +6,22 @@
   text-align: center;
   position: relative;
 
-  &::before {
-    display: none;
+  // &::before {
+  //   display: none;
 
-    @media (min-width: $desktop-width) {
-      display: block;
-      content: "";
-      background-image: url("../../img/career/frame.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      width: 1179px;
-      height: 409px;
-      top: -90px;
-      left: 130px;
-    }
-  }
+  //   @media (min-width: $laptop-width) {
+  //     display: block;
+  //     content: "";
+  //     background-image: url("../../img/career/frame.png");
+  //     background-repeat: no-repeat;
+  //     background-position: 0 0;
+  //     position: absolute;
+  //     width: 1179px;
+  //     height: 409px;
+  //     top: -90px;
+  //     left: 130px;
+  //   }
+  // }
 }
 
 .career__title {
@@ -37,7 +37,7 @@
     line-height: 28px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 27px;
@@ -47,17 +47,41 @@
   &::after {
     display: none;
 
-    @media (min-width: $desktop-width) {
-      display: block;
-      content: "";
-      background-image: url("../../img/career/text-decoration.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      width: 252px;
-      height: 64px;
-      top: 75px;
-      right: 850px;
+    // @media (min-width: $laptop-width) {
+    //   display: block;
+    //   content: "";
+    //   background-image: url("../../img/career/text-decoration.png");
+    //   background-repeat: no-repeat;
+    //   background-position: 0 0;
+    //   position: absolute;
+    //   width: 252px;
+    //   height: 64px;
+    //   top: 75px;
+    //   right: 850px;
+    // }
+}
+}
+
+.career__icon {
+  display: none;
+
+  @media (min-width: $laptop-width) {
+    display: block;
+    position: absolute;
+    top: 75px;
+    left: 340px;
+
+    animation-duration: 1s;
+    animation-name: logo;
+
+    @keyframes logo {
+      from {
+        transform: rotate(-45deg);
+      }
+
+      to {
+        transform: none;
+      }
     }
   }
 }
@@ -75,7 +99,7 @@
     margin-bottom: 39px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     width: 899px;
     margin-bottom: 69px;
   }
@@ -88,7 +112,7 @@
     display: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: block;
     width: 100%;
     height: auto;
@@ -100,8 +124,9 @@
   height: auto;
   margin-bottom: 27px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: none;
     margin-bottom: 49px;
   }
 }
+

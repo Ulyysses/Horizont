@@ -5,8 +5,8 @@
   background-color: $blue;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 50px;
-  height: 620px;
+  padding-top: 95px;
+  height: 670px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -19,7 +19,7 @@
     height: 1221px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     text-align: center;
     background-image: url("../../img/mountains/background.jpg");
     background-position: center;
@@ -27,7 +27,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 70px;
-    margin-top: -180px;
     height: 1440px;
   }
 }
@@ -42,11 +41,25 @@
     height: 192px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     width: 545px;
     height: auto;
-    padding-top: 130px;
-    margin-bottom: 30px;
+    padding-top: 115px;
+    margin-bottom: 20px;
+
+    animation-duration: 3s;
+    animation-name: slide;
+
+    @keyframes slide {
+      from {
+        transform: rotate(-360deg);
+        // margin-right: 100%;
+      }
+
+      to {
+        transform: none;
+      }
+    }
   }
 }
 
@@ -58,7 +71,7 @@
     font-size: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     font-size: 65px;
     margin-bottom: 8px;
   }
@@ -75,25 +88,48 @@
     font-size: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     font-size: 25px;
     margin-bottom: 610px;
   }
 }
 
 .main__quote {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding-top: 236px;
+  display: none;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-bottom: 37px;
+  &_mob {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 230px;
+
+    // animation-duration: 3s;
+    // animation-name: slidein;
+
+    // @keyframes slidein {
+    //   from {
+    //     margin-right: 100%;
+    //     width: 300%;
+    //   }
+
+    //   to {
+    //     margin-left: 0%;
+    //     width: 100%;
+    //   }
+    // }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 90px;
+  &_tab {
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 37px;
+    }
+  }
+
+  &_active {
+    @media (min-width: $laptop-width) {
+      padding-bottom: 90px;
+    }
   }
 }
 
@@ -106,7 +142,7 @@
     font-size: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     font-size: 40px;
   }
 }
@@ -123,7 +159,7 @@
     margin-left: 25%;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     font-size: 25px;
     margin-left: 30%;
   }

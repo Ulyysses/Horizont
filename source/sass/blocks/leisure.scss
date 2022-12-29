@@ -13,7 +13,7 @@
     padding-left: 44px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     justify-content: center;
     gap: 33px;
     padding-left: 0;
@@ -32,7 +32,7 @@
     margin-bottom: 14px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     margin-bottom: 17px;
 
     &::before {
@@ -70,7 +70,7 @@
     width: 601px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     width: 489px;
   }
 }
@@ -82,7 +82,7 @@
     margin-bottom: 22px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     margin-bottom: 35px;
 
     &::after {
@@ -116,7 +116,7 @@
 .leisure__img {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: block;
   }
 }

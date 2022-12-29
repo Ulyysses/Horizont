@@ -14,44 +14,74 @@
     margin-bottom: 41px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     background-color: $black;
     margin-bottom: 113px;
     flex-direction: row;
-    justify-content: unset;
+    justify-content: center;
+    gap: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 151px;
   }
 }
 
 .goal__img {
   display: none;
 
+  @media (min-width: $laptop-width) {
+    display: block;
+    padding-top: 47px;
+    height: 100%;
+    width: 607px;
+    background-color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.goal__img_desk {
+  display: none;
+
   @media (min-width: $desktop-width) {
     display: block;
-    padding-top: 91px;
+    padding-top: 37px;
     height: 100%;
-    width: 520px;
+    width: 712px;
+    background-color: $black;
   }
 }
 
 .goal__text-container {
   padding-left: 19px;
   padding-bottom: 22px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-left: 37px;
     padding-bottom: 61px;
   }
 
+  @media (min-width: $laptop-width) {
+    padding-left: 0;
+    padding-top: 248px;
+    padding-bottom: 262px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 243px;
-    padding-left: 250px;
-    padding-bottom: none;
+    padding-top: 249px;
+    height: 100%;
+    width: 712px;
+    background-color: $black;
   }
 
   &::before {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $laptop-width) {
       display: block;
       content: "";
       background-image: url("../../img/goal/pattern-upper.png");
@@ -61,14 +91,14 @@
       width: 666px;
       height: 296px;
       bottom: 380px;
-      right: 120px;
+      right: -30px;
     }
   }
 
   &::after {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $laptop-width) {
       display: block;
       content: "";
       background-image: url("../../img/goal/pattern-lower.png");
@@ -78,7 +108,7 @@
       width: 666px;
       height: 296px;
       top: 325px;
-      right: 120px;
+      right: -30px;
     }
   }
 }
@@ -87,7 +117,7 @@
   color: $black;
   margin-bottom: 13px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     color: $white;
   }
 }
@@ -95,7 +125,7 @@
 .goal__text {
   color: $black;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     color: $white;
   }
 }
@@ -109,7 +139,7 @@
     height: auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: none;
   }
 }

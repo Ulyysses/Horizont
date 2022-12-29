@@ -90,7 +90,7 @@ export function copyAssets () {
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
-    'source/robot.txt',
+    'source/robots.txt',
   ], {
     base: 'source'
   })
