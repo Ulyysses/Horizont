@@ -22,6 +22,11 @@
   //     left: 130px;
   //   }
   // }
+
+  @media (min-width: $laptop-width) {
+    text-align: start;
+    display: flex;
+  }
 }
 
 .career__title {
@@ -44,47 +49,47 @@
     line-height: 52px;
   }
 
-  &::after {
-    display: none;
+//   &::after {
+//     display: none;
 
-    // @media (min-width: $laptop-width) {
-    //   display: block;
-    //   content: "";
-    //   background-image: url("../../img/career/text-decoration.png");
-    //   background-repeat: no-repeat;
-    //   background-position: 0 0;
-    //   position: absolute;
-    //   width: 252px;
-    //   height: 64px;
-    //   top: 75px;
-    //   right: 850px;
-    // }
+//     // @media (min-width: $laptop-width) {
+//     //   display: block;
+//     //   content: "";
+//     //   background-image: url("../../img/career/text-decoration.png");
+//     //   background-repeat: no-repeat;
+//     //   background-position: 0 0;
+//     //   position: absolute;
+//     //   width: 252px;
+//     //   height: 64px;
+//     //   top: 75px;
+//     //   right: 850px;
+//     // }
+// }
 }
-}
 
-.career__icon {
-  display: none;
+// .career__icon {
+//   display: none;
 
-  @media (min-width: $laptop-width) {
-    display: block;
-    position: absolute;
-    top: 75px;
-    left: 340px;
+//   @media (min-width: $laptop-width) {
+//     display: block;
+//     position: absolute;
+//     top: 75px;
+//     left: 340px;
 
-    animation-duration: 1s;
-    animation-name: logo;
+//     animation-duration: 1s;
+//     animation-name: logo;
 
-    @keyframes logo {
-      from {
-        transform: rotate(-45deg);
-      }
+//     @keyframes logo {
+//       from {
+//         transform: rotate(-45deg);
+//       }
 
-      to {
-        transform: none;
-      }
-    }
-  }
-}
+//       to {
+//         transform: none;
+//       }
+//     }
+//   }
+// }
 
 .career__text {
   margin-bottom: 11px;
