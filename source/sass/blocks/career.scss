@@ -6,33 +6,14 @@
   text-align: center;
   position: relative;
 
-  // &::before {
-  //   display: none;
-
-  //   @media (min-width: $laptop-width) {
-  //     display: block;
-  //     content: "";
-  //     background-image: url("../../img/career/frame.png");
-  //     background-repeat: no-repeat;
-  //     background-position: 0 0;
-  //     position: absolute;
-  //     width: 1179px;
-  //     height: 409px;
-  //     top: -90px;
-  //     left: 130px;
-  //   }
-  // }
-
   @media (min-width: $laptop-width) {
     text-align: start;
     display: flex;
-    padding-left: 150px;
     align-items: center;
     margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 300px;
     margin-bottom: unset;
     gap: 100px;
   }
@@ -59,63 +40,19 @@
     text-transform: uppercase;
     width: 662px;
   }
-
-  //   &::after {
-  //     display: none;
-
-  //     // @media (min-width: $laptop-width) {
-  //     //   display: block;
-  //     //   content: "";
-  //     //   background-image: url("../../img/career/text-decoration.png");
-  //     //   background-repeat: no-repeat;
-  //     //   background-position: 0 0;
-  //     //   position: absolute;
-  //     //   width: 252px;
-  //     //   height: 64px;
-  //     //   top: 75px;
-  //     //   right: 850px;
-  //     // }
-  // }
 }
-
-// .career__icon {
-//   display: none;
-
-//   @media (min-width: $laptop-width) {
-//     display: block;
-//     position: absolute;
-//     top: 75px;
-//     left: 340px;
-
-//     animation-duration: 1s;
-//     animation-name: logo;
-
-//     @keyframes logo {
-//       from {
-//         transform: rotate(-45deg);
-//       }
-
-//       to {
-//         transform: none;
-//       }
-//     }
-//   }
-// }
 
 .career__text {
   margin-bottom: 11px;
-  width: 269px;
   display: block;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
-    width: 604px;
   }
 
   @media (min-width: $laptop-width) {
     margin-bottom: 69px;
-    width: 629px;
     margin-left: unset;
   }
 
@@ -137,7 +74,6 @@
 
     @media (min-width: $desktop-width) {
       top: 420px;
-      left: 120px;
     }
   }
 }
@@ -201,6 +137,5 @@
 
   @media (min-width: $desktop-width) {
     top: -60px;
-    left: 250px;
   }
 }
