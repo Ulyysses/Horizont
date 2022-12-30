@@ -26,6 +26,15 @@
   @media (min-width: $laptop-width) {
     text-align: start;
     display: flex;
+    padding-left: 150px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 300px;
+    margin-bottom: unset;
+    gap: 100px;
   }
 }
 
@@ -43,28 +52,30 @@
   }
 
   @media (min-width: $laptop-width) {
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 27px;
-    line-height: 52px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 32px;
+    text-transform: uppercase;
+    width: 662px;
   }
 
-//   &::after {
-//     display: none;
+  //   &::after {
+  //     display: none;
 
-//     // @media (min-width: $laptop-width) {
-//     //   display: block;
-//     //   content: "";
-//     //   background-image: url("../../img/career/text-decoration.png");
-//     //   background-repeat: no-repeat;
-//     //   background-position: 0 0;
-//     //   position: absolute;
-//     //   width: 252px;
-//     //   height: 64px;
-//     //   top: 75px;
-//     //   right: 850px;
-//     // }
-// }
+  //     // @media (min-width: $laptop-width) {
+  //     //   display: block;
+  //     //   content: "";
+  //     //   background-image: url("../../img/career/text-decoration.png");
+  //     //   background-repeat: no-repeat;
+  //     //   background-position: 0 0;
+  //     //   position: absolute;
+  //     //   width: 252px;
+  //     //   height: 64px;
+  //     //   top: 75px;
+  //     //   right: 850px;
+  //     // }
+  // }
 }
 
 // .career__icon {
@@ -100,13 +111,34 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
     width: 604px;
-
-    margin-bottom: 39px;
   }
 
   @media (min-width: $laptop-width) {
-    width: 899px;
     margin-bottom: 69px;
+    width: 629px;
+    margin-left: unset;
+  }
+
+  &::after {
+    display: none;
+
+    @media (min-width: $laptop-width) {
+      display: block;
+      content: "";
+      background-image: url("../../img/career/lower.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      width: 635px;
+      height: 272px;
+      top: 370px;
+      left: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 420px;
+      left: 120px;
+    }
   }
 }
 
@@ -119,8 +151,14 @@
 
   @media (min-width: $laptop-width) {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 651px;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 718px;
+    height: 100%;
   }
 }
 
@@ -135,3 +173,34 @@
   }
 }
 
+.career__icon {
+  display: none;
+
+  @media (min-width: $laptop-width) {
+    display: block;
+    position: absolute;
+    top: -80px;
+    left: 70px;
+    transform: rotate(3deg);
+
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+
+    @-webkit-keyframes mymove {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes mymove {
+      50% {
+        opacity: 0;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -60px;
+    left: 250px;
+  }
+}

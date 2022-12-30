@@ -92,7 +92,13 @@
       width: 666px;
       height: 296px;
       bottom: 380px;
-      right: -30px;
+      right: -100px;
+      transform: rotate(10deg);
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 130px;
+      transform: none;
     }
   }
 
@@ -108,8 +114,15 @@
       position: absolute;
       width: 666px;
       height: 296px;
-      top: 325px;
-      right: -30px;
+      top: 380px;
+      right: 60px;
+      transform: rotate(10deg);
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 360px;
+      right: 160px;
+      transform: none;
     }
   }
 }

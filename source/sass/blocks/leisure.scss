@@ -16,8 +16,16 @@
   @media (min-width: $laptop-width) {
     justify-content: center;
     gap: 33px;
-    padding-left: 0;
+    padding-left: 30px;
+    padding-right: 160px;
     padding-bottom: none;
+    gap: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 180px;
+    padding-left: 182px;
+    padding-right: 350px;
   }
 }
 
@@ -37,28 +45,62 @@
 
     &::before {
       content: "";
-      background-image: url("../../img/leisure/check-right.png");
+      background-image: url("../../img/leisure/check-upper.png");
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: 0 0;
       position: absolute;
       display: block;
-      width: 115px;
+      width: 350px;
       height: 143px;
-      top: 5px;
-      left: 480px;
+      top: -60px;
+      left: -5px;
     }
 
     &::after {
       content: "";
-      background-image: url("../../img/leisure/check-left.png");
+      background-image: url("../../img/leisure/check-right01.png");
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: 0 0;
       position: absolute;
       display: block;
-      width: 80px;
-      height: 87px;
-      top: 150px;
-      left: 80px;
+      width: 70px;
+      height: 100px;
+      top: 60px;
+      left: 440px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+
+    &::before {
+      content: "";
+      background-image: url("../../img/leisure/check-upper1_d.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      display: block;
+      width: 110px;
+      height: 110px;
+      top: 20px;
+      left: 590px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../img/leisure/check-upper2_d.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      display: block;
+      width: 70px;
+      height: 100px;
+      top: 80px;
+      left: 900px;
     }
   }
 }
@@ -72,6 +114,66 @@
 
   @media (min-width: $laptop-width) {
     width: 489px;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/leisure/check-right.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      display: block;
+      width: 200px;
+      height: 800px;
+      right: 20px;
+      top: 10px;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../../img/leisure/ckeck-lower.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      display: block;
+      width: 400px;
+      height: 120px;
+      left: 20px;
+      top: 820px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 489px;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/leisure/check-right_d.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      display: block;
+      width: 200px;
+      height: 800px;
+      right: 20px;
+      top: 10px;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../../img/leisure/check-lower_d.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      display: block;
+      width: 122px;
+      height: 120px;
+      left: 350px;
+      top: 870px;
+    }
   }
 }
 
@@ -88,27 +190,59 @@
     &::after {
       content: "";
       background-image: url("../../img/leisure/check-group.png");
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: 0 0;
       position: absolute;
       display: block;
-      width: 500px;
-      height: 500px;
-      left: 480px;
-      bottom: -230px;
+      width: 550px;
+      height: 350px;
+      top: 500px;
+      left: 500px;
     }
 
     &::before {
       content: "";
-      background-image: url("../../img/leisure/check-lower.png");
+      background-image: url("../../img/leisure/check-left.png");
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: 0 0;
       position: absolute;
       display: block;
-      width: 176px;
-      height: 132px;
-      left: 150px;
-      bottom: -120px;
+      width: 100px;
+      height: 100px;
+      top: 200px;
+      left: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      background-image: url("../../img/leisure/check-group_d.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      display: block;
+      width: 550px;
+      height: 350px;
+      top: 600px;
+      left: 720px;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../../img/leisure/check-left_d.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      display: block;
+      width: 250px;
+      height: 900px;
+      top: 100px;
+      left: -15px;
     }
   }
 }

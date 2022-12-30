@@ -29,12 +29,30 @@
     padding-top: 70px;
     height: 1440px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
 }
 
 .main__logo {
   width: 182px;
   height: 87px;
   margin-bottom: 10px;
+
+  animation-duration: 3s;
+  animation-name: slide;
+
+  @keyframes slide {
+    from {
+      transform: rotate(-360deg);
+      margin-right: 100%;
+    }
+
+    to {
+      transform: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 402px;
@@ -46,20 +64,6 @@
     height: auto;
     padding-top: 115px;
     margin-bottom: 20px;
-
-    animation-duration: 3s;
-    animation-name: slide;
-
-    @keyframes slide {
-      from {
-        transform: rotate(-360deg);
-        // margin-right: 100%;
-      }
-
-      to {
-        transform: none;
-      }
-    }
   }
 }
 
@@ -95,42 +99,29 @@
 }
 
 .main__quote {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 230px;
 
-  &_mob {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-top: 230px;
-
-    // animation-duration: 3s;
-    // animation-name: slidein;
-
-    // @keyframes slidein {
-    //   from {
-    //     margin-right: 100%;
-    //     width: 300%;
-    //   }
-
-    //   to {
-    //     margin-left: 0%;
-    //     width: 100%;
-    //   }
-    // }
+  @media (min-width: $tablet-width) {
+    padding-top: 0px;
   }
 
-  &_tab {
-    @media (min-width: $tablet-width) {
-      padding-top: 0;
-      padding-bottom: 37px;
-    }
-  }
+  // animation-duration: 3s;
+  // animation-name: slidein;
 
-  &_active {
-    @media (min-width: $laptop-width) {
-      padding-bottom: 90px;
-    }
-  }
+  // @keyframes slidein {
+  //   from {
+  //     margin-right: 100%;
+  //     width: 300%;
+  //   }
+
+  //   to {
+  //     margin-left: 0%;
+  //     width: 100%;
+  //   }
+  // }
 }
 
 .quote__text {

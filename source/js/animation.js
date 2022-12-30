@@ -1,21 +1,9 @@
-const quote = document.querySelector(".main__quote");
+const header = document.querySelector(".header__nav");
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY >= 800) {
-    quote.classList.add('main__quote_active');
+  if (window.scrollY >= 1000) {
+    header.classList.add('header__nav_color');
   } else {
-    quote.classList.remove('main__quote_active');
-  }
-
-  if (window.scrollY >= 200) {
-    quote.classList.add('main__quote_mob');
-  } else {
-    quote.classList.remove('main__quote_mob');
-  }
-
-  if (window.scrollY >= 500) {
-    quote.classList.add('main__quote_tab');
-  } else {
-    quote.classList.remove('main__quote_tab');
+    header.classList.remove('header__nav_color');
   }
 });

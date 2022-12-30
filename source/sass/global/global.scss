@@ -73,10 +73,6 @@ button {
   padding: 0;
 
   @media (min-width: $laptop-width) {
-    width: 1440px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1920px;
+    max-width: 1919px;
   }
 }
