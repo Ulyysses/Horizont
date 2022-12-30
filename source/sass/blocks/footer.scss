@@ -31,6 +31,13 @@
     padding-right: 50px;
     min-height: 115px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .footer__list {

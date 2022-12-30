@@ -1,35 +1,30 @@
+.we {
+  overflow: hidden;
+  position: relative;
+}
+
 .we__container {
-  display: flex;
-  justify-content: space-between;
   position: relative;
 
-  @media (min-width: $desktop-width) {
-    padding-right: 100px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $laptop-width) {
+    // padding-left: 150px;
+    padding-top: 232px;
+    padding-bottom: 238px;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   padding-left: 0;
+  // }
 }
 
 .we__text-container {
-  padding-top: 35px;
-  padding-bottom: 32px;
-  padding-left: 19px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 68px;
-    padding-bottom: 60px;
-    padding-left: 37px;
-  }
-
   @media (min-width: $laptop-width) {
-    padding-top: 232px;
-    padding-bottom: 228px;
-    padding-left: 155px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 250px;
-    padding-bottom: 235px;
-    padding-left: 300px;
-    width: 859px;
+    width: 560px;
   }
 
   &::before {
@@ -49,8 +44,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 40px;
-      left: 200px;
+      // top: 40px;
+      right: unset;
     }
   }
 
@@ -71,8 +66,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 380px;
-      left: 140px;
+      // top: 380px;
+      // left: 140px;
+      left: unset;
     }
   }
 }
@@ -106,7 +102,7 @@
 
     @media (min-width: $desktop-width) {
       top: 200px;
-      left: 120px;
+      left: -150px;
     }
   }
 }
@@ -116,19 +112,15 @@
 
   @media (min-width: $laptop-width) {
     display: block;
-    margin-top: 130px;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.we__img_desk {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
+    right: 0;
     height: 100%;
   }
 }
