@@ -2,6 +2,7 @@
   position: fixed;
   z-index: 3;
   width: 100%;
+  background-color: $darkblue;
 }
 
 .header__nav {
@@ -28,7 +29,6 @@
     background-color: unset;
 
     &_color {
-      background-color: $darkblue;
       padding-bottom: 33px;
       min-height: 110px;
     }
