@@ -2,7 +2,17 @@
   position: fixed;
   z-index: 3;
   width: 100%;
-  background-color: $darkblue;
+
+  &_color {
+    background-color: $darkblue;
+
+    .header__nav {
+      @media (min-width: $laptop-width) {
+        padding-bottom: 33px;
+        min-height: 110px;
+      }
+    }
+  }
 }
 
 .header__nav {
@@ -27,11 +37,6 @@
     padding-top: 33px;
     min-height: 97px;
     background-color: unset;
-
-    &_color {
-      padding-bottom: 33px;
-      min-height: 110px;
-    }
   }
 }
 
