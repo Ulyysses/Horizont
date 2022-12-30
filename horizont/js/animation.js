@@ -1,1 +1,0 @@
-const header=document.querySelector(".header__nav");window.addEventListener("scroll",(()=>{window.scrollY>=1e3?header.classList.add("header__nav_color"):header.classList.remove("header__nav_color")}));
