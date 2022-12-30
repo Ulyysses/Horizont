@@ -1,32 +1,15 @@
 .organization {
   position: relative;
-  top: -60px;
-
-  @media (min-width: $tablet-width) {
-    top: -120px;
-  }
-
-  @media (min-width: $laptop-width) {
-    top: 0;
-  }
 }
 
 .organization__container {
-  padding-bottom: 50px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 270px;
-  }
-
   @media (min-width: $laptop-width) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 860px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 780px;
   }
 
   position: relative;
@@ -34,16 +17,13 @@
 
 .organization__title {
   margin-bottom: 10px;
-  margin-left: 18px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
-    margin-left: 40px;
   }
 
   @media (min-width: $laptop-width) {
     margin-bottom: 12px;
-    margin-left: none;
   }
 }
 
@@ -61,19 +41,16 @@
 }
 
 .organization__list {
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 34px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
     gap: 58px;
   }
 
   @media (min-width: $laptop-width) {
-    margin-left: 219px;
     flex-direction: row;
     justify-content: space-around;
     row-gap: 95px;
@@ -84,8 +61,16 @@
 
 .organization__item {
   z-index: 2;
+  position: relative;
+
+  @media (min-width: $laptop-width) {
+    padding-right: 0;
+    width: calc(50% - (150px / 2));
+  }
 
   &:nth-child(1) {
+    padding-right: 100px;
+
     &::before {
       display: none;
 
@@ -99,11 +84,7 @@
         width: 124px;
         height: 233px;
         top: -40px;
-        left: -80px;
-      }
-
-      @media (min-width: $desktop-width) {
-        left: 20px;
+        left: -124px;
       }
     }
 
@@ -116,8 +97,8 @@
       position: absolute;
       width: 122px;
       height: 176px;
-      top: -10px;
-      left: 200px;
+      top: -20px;
+      right: 0;
 
       @media (min-width: $tablet-width) {
         display: block;
@@ -128,8 +109,7 @@
         position: absolute;
         width: 230px;
         height: 364px;
-        top: -60px;
-        left: 420px;
+        top: -80px;
       }
 
       @media (min-width: $laptop-width) {
@@ -162,7 +142,7 @@
         width: 124px;
         height: 233px;
         top: -10px;
-        right: 535px;
+        left: -124px;
       }
 
       @media (min-width: $desktop-width) {
@@ -179,7 +159,7 @@
       position: absolute;
       width: 122px;
       height: 176px;
-      top: 120px;
+      top: -25px;
       left: -25px;
 
       @media (min-width: $tablet-width) {
@@ -191,8 +171,6 @@
         position: absolute;
         width: 166px;
         height: 236px;
-        top: 250px;
-        left: -40px;
       }
 
       @media (min-width: $laptop-width) {
@@ -202,6 +180,8 @@
   }
 
   &:nth-child(3) {
+    padding-right: 100px;
+
     &::before {
       display: none;
 
@@ -214,12 +194,8 @@
         position: absolute;
         width: 124px;
         height: 233px;
-        top: 260px;
-        left: -100px;
-      }
-
-      @media (min-width: $desktop-width) {
-        left: 10px;
+        top: -40px;
+        left: -124px;
       }
     }
 
@@ -232,8 +208,8 @@
       position: absolute;
       width: 122px;
       height: 176px;
-      top: 240px;
-      left: 220px;
+      top: -25px;
+      right: 0;
 
       @media (min-width: $tablet-width) {
         display: block;
@@ -244,8 +220,6 @@
         position: absolute;
         width: 257px;
         height: 294px;
-        top: 450px;
-        left: 420px;
       }
 
       @media (min-width: $laptop-width) {
@@ -266,7 +240,6 @@
     }
 
     &::before {
-
       display: none;
 
       @media (min-width: $laptop-width) {
@@ -278,8 +251,8 @@
         position: absolute;
         width: 124px;
         height: 233px;
-        top: 260px;
-        right: 535px;
+        top: -40px;
+        left: -124px;
       }
 
       @media (min-width: $desktop-width) {
@@ -290,14 +263,12 @@
 }
 
 .organization__img {
-  position: absolute;
-  width: 368px;
+  width: 100%;
   height: auto;
   margin-top: -30px;
   transform: scale(-1, 1);
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     height: auto;
     margin-top: -70px;
   }
@@ -322,5 +293,6 @@
     display: block;
     position: absolute;
     right: 80px;
+    bottom: 0;
   }
 }
