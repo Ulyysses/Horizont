@@ -21,16 +21,6 @@
     padding-bottom: none;
     gap: 90px;
   }
-
-  @media (min-width: $desktop-width) {
-    gap: 180px;
-    padding-left: 182px;
-    padding-right: 350px;
-  }
-}
-
-.leisure__text-container {
-  padding-top: 130px;
 }
 
 .leisure__title {
@@ -43,14 +33,17 @@
   @media (min-width: $laptop-width) {
     margin-bottom: 17px;
 
-    &::before {
+    &::before, &::after {
       content: "";
-      background-image: url("../../img/leisure/check-upper.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 0 0;
       position: absolute;
       display: block;
+    }
+
+    &::before {
+      background-image: url("../../img/leisure/check-upper.png");
       width: 350px;
       height: 143px;
       top: -60px;
@@ -58,85 +51,38 @@
     }
 
     &::after {
-      content: "";
       background-image: url("../../img/leisure/check-right01.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
       width: 70px;
       height: 100px;
       top: 60px;
       left: 440px;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 17px;
-
-    &::before {
-      content: "";
-      background-image: url("../../img/leisure/check-upper1_d.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
-      width: 110px;
-      height: 110px;
-      top: 20px;
-      left: 590px;
-    }
-
-    &::after {
-      content: "";
-      background-image: url("../../img/leisure/check-upper2_d.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
-      width: 70px;
-      height: 100px;
-      top: 80px;
-      left: 900px;
-    }
-  }
 }
 
 .leisure__text {
-  width: 351px;
-
-  @media (min-width: $tablet-width) {
-    width: 601px;
-  }
-
   @media (min-width: $laptop-width) {
     width: 489px;
 
-    &::after {
+    &::before, &::after {
       content: "";
-      background-image: url("../../img/leisure/check-right.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 0 0;
       position: absolute;
       display: block;
+    }
+
+    &::after {
+      background-image: url("../../img/leisure/check-right.png");
       width: 200px;
       height: 800px;
-      right: 20px;
-      top: 10px;
+      right: -25px;
+      top: -100px;
     }
 
     &::before {
-      content: "";
       background-image: url("../../img/leisure/ckeck-lower.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
       width: 400px;
       height: 120px;
       left: 20px;
@@ -148,27 +94,15 @@
     width: 489px;
 
     &::after {
-      content: "";
       background-image: url("../../img/leisure/check-right_d.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
       width: 200px;
       height: 800px;
-      right: 20px;
+      right: -200px;
       top: 10px;
     }
 
     &::before {
-      content: "";
       background-image: url("../../img/leisure/check-lower_d.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
       width: 122px;
       height: 120px;
       left: 350px;
@@ -187,14 +121,17 @@
   @media (min-width: $laptop-width) {
     margin-bottom: 35px;
 
-    &::after {
+    &::before, &::after {
       content: "";
-      background-image: url("../../img/leisure/check-group.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 0 0;
       position: absolute;
       display: block;
+    }
+
+    &::after {
+      background-image: url("../../img/leisure/check-group.png");
       width: 550px;
       height: 350px;
       top: 500px;
@@ -202,47 +139,11 @@
     }
 
     &::before {
-      content: "";
       background-image: url("../../img/leisure/check-left.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
       width: 100px;
       height: 100px;
       top: 200px;
       left: 20px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      content: "";
-      background-image: url("../../img/leisure/check-group_d.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
-      width: 550px;
-      height: 350px;
-      top: 600px;
-      left: 720px;
-    }
-
-    &::before {
-      content: "";
-      background-image: url("../../img/leisure/check-left_d.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      position: absolute;
-      display: block;
-      width: 250px;
-      height: 900px;
-      top: 100px;
-      left: -15px;
     }
   }
 }
