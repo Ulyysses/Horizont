@@ -4,22 +4,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 29px;
+  gap: 28px;
   padding-bottom: 22px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-left: 44px;
     padding-bottom: 55px;
-    gap: 19px;
+    gap: 20px;
   }
 
   @media (min-width: $laptop-width) {
-    align-items: flex-start;
     flex-direction: row;
-    gap: 130px;
-    padding-bottom: 100px;
-    padding-top: 154px;
+    align-items: center;
+    gap: 0;
+    padding-bottom: 90px;
+  }
+}
+
+.communication__description {
+  @media (min-width: $laptop-width) {
+    flex-basis: 552px;
   }
 }
 
@@ -34,6 +38,7 @@
   @media (min-width: $laptop-width) {
     margin-bottom: 17px;
     font-size: 40px;
+    text-align: left;
   }
 }
 
@@ -46,7 +51,7 @@
 
   @media (min-width: $laptop-width) {
     margin-bottom: 31px;
-    text-align: start;
+    text-align: left;
   }
 }
 
@@ -69,6 +74,8 @@
     font-size: 40px;
     margin-bottom: 40px;
     font-weight: 500;
+    display: block;
+    text-align: left;
   }
 }
 
@@ -82,46 +89,22 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/form-background_laptop.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 542px;
     height: 522px;
   }
 
   @media (min-width: $laptop-width) {
     background-image: url("../../img/form-backgroung2.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 628px;
-    height: 695px;
-    margin-top: -120px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../../img/form-background.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 658px;
-    height: 698px;
-    margin-top: -120px;
+    background-size: contain;
+    width: 685px;
+    height: 631px;
   }
 }
 
 .form__container {
   display: flex;
   justify-content: center;
-  padding-top: 70px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 80px;
-  }
-
-  @media (min-width: $laptop-width) {
-    padding-top: 150px;
-  }
+  align-items: center;
 }
 
 .form {
@@ -155,7 +138,6 @@
   width: 220px;
   height: 30px;
   color: $white;
-  font-size: 25px;
   transition: all 0.3s ease;
 
   &:hover {
@@ -166,6 +148,7 @@
     width: 330px;
     height: 70px;
     padding: 20px 30px;
+    font-size: 24px;
   }
 
   @media (min-width: $laptop-width) {
@@ -230,15 +213,7 @@
     position: absolute;
     top: 380px;
     left: 300px;
-
-    -webkit-animation: mymove 5s infinite;
     animation: mymove 5s infinite;
-
-    @-webkit-keyframes mymove {
-      50% {
-        opacity: 0;
-      }
-    }
 
     @keyframes mymove {
       50% {
