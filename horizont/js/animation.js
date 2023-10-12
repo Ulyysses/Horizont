@@ -1,0 +1,1 @@
+const header=document.querySelector(".header");window.addEventListener("scroll",(()=>{window.scrollY>=1e3?header.classList.add("header_color"):header.classList.remove("header_color")}));

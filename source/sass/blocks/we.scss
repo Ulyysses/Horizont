@@ -6,20 +6,13 @@
 .we__container {
   position: relative;
 
-  // padding-left: 20px;
-  // padding-right: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
 
   @media (min-width: $laptop-width) {
-    // padding-left: 150px;
     padding-top: 232px;
     padding-bottom: 238px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   padding-left: 0;
-  // }
 }
 
 .we__text-container {
@@ -44,7 +37,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      // top: 40px;
       right: unset;
     }
   }
@@ -66,8 +58,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      // top: 380px;
-      // left: 140px;
       left: unset;
     }
   }
